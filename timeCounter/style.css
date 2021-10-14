@@ -8,7 +8,10 @@ h3 {
   font-size: 30px;
   color: #727272;
 }
-
+h3 span {
+  font-size: 35px;
+  color: rgb(231, 52, 52);
+}
 p {
   text-align: center;
   margin: 0 auto;
