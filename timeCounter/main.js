@@ -1,5 +1,5 @@
 //finished time
-const dateFinishCounter = new Date("October 14, 2021 21:35:00").getTime();
+const dateFinishCounter = new Date("October 14, 2021 18:16:00").getTime();
 
 //function, 1000 ms
 const countDown = setInterval(() => {
