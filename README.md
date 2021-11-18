@@ -1,4 +1,3 @@
-# test
 ## pet-repository
 
 # timeCounter
