@@ -1,5 +1,6 @@
 //finished time
-const dateFinishCounter = new Date("Dec 31, 2021 00:00:00").getTime();
+const dateFinishCounter = new Date("Jan 01, 2021 00:00:00").getTime();
+const alert = document.querySelector('.alert')
 
 //function, 1000 ms
 const countDown = setInterval(() => {
@@ -24,10 +25,17 @@ const countDown = setInterval(() => {
     "countDown"
   ).innerHTML = `${days} : ${hours} : ${minutes} : ${seconds}`;
   
+    // Вообщение при окончании времени
+    const finishData = 'Happy NEW 2022 YEAR!'
 
   if (difference < 0) {
     clearInterval(countDown);
-    document.getElementById("countDown").innerHTML = "FINISH!";
+    document.getElementById("countDown").innerHTML = finishData;
+    alert.insertAdjacentHTML('beforeend', `
+      <div class="alert__img">
+        <img src="https://acegif.com/wp-content/uploads/fireworks-7.gif" class="img">
+      </div>
+    `)
   }
 }, 1000);
 
