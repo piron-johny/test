@@ -1,10 +1,12 @@
 //finished time
-const dateFinishCounter = new Date("Jan 01, 2022 00:00:01").getTime();
-const alert = document.querySelector('.alert')
+// const dateFinishCounter = new Date("Jan 01, 2022 00:00:01").getTime();
+const dateFinishCounter = new Date("Nov 18, 2021 16:21:01").getTime();
+const alert = document.querySelector('.alert');
+const title = document.querySelector('h3');
 
 //function, 1000 ms
 const countDown = setInterval(() => {
-  
+
   // Сегодняшние дата и время
   const now = new Date().getTime();
 
@@ -24,18 +26,28 @@ const countDown = setInterval(() => {
   document.getElementById(
     "countDown"
   ).innerHTML = `${days} : ${hours} : ${minutes} : ${seconds}`;
-  
-    // Вообщение при окончании времени
-    const finishData = "Happy NEW 2022 YEAR!";
+
+  // Вообщение при окончании времени
+  const finishData = "Happy NEW 2022 YEAR!";
 
   if (difference < 0) {
     clearInterval(countDown);
-    document.getElementById("countDown").innerHTML = finishData;
-    // alert.insertAdjacentHTML('beforeend', `
-    //   <div class="alert__img">
-    //     <img src="https://acegif.com/wp-content/uploads/fireworks-7.gif" class="img">
-    //   </div>
-    // `)
+    const box = document.getElementById("countDown");
+    box.innerHTML = finishData;
+    box.classList.add('action');
+    title.remove();
+
+    alert.insertAdjacentHTML('beforeend', `
+      <div class="alert__img">
+        <img src="https://acegif.com/wp-content/uploads/fireworks-7.gif" class="img">
+      </div>
+      <div class="alert__img">
+        <img src="https://acegif.com/wp-content/uploads/fireworks-7.gif" class="img">
+      </div>
+      <div class="alert__img">
+        <img src="https://acegif.com/wp-content/uploads/fireworks-7.gif" class="img">
+      </div>
+    `)
   }
 }, 1000);
 

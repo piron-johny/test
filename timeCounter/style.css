@@ -19,6 +19,17 @@ p {
   font-size: 60px;
   color: #eeeeee;
   background: rgb(58, 40, 40);
-  max-width: 500px;
+  width: 500px;
   font-weight: 700;
+}
+
+.action {
+  background: #ff0000;
+  width: 750px;
+  font-size: 60px;
+}
+.alert {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
