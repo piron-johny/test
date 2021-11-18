@@ -31,11 +31,11 @@ const countDown = setInterval(() => {
   if (difference < 0) {
     clearInterval(countDown);
     document.getElementById("countDown").innerHTML = finishData;
-    alert.insertAdjacentHTML('beforeend', `
-      <div class="alert__img">
-        <img src="https://acegif.com/wp-content/uploads/fireworks-7.gif" class="img">
-      </div>
-    `)
+    // alert.insertAdjacentHTML('beforeend', `
+    //   <div class="alert__img">
+    //     <img src="https://acegif.com/wp-content/uploads/fireworks-7.gif" class="img">
+    //   </div>
+    // `)
   }
 }, 1000);
 
