@@ -1,5 +1,5 @@
 //finished time
-const dateFinishCounter = new Date("Jan 01, 2021 00:00:00").getTime();
+const dateFinishCounter = new Date("Jan 01, 2022 00:00:00").getTime();
 const alert = document.querySelector('.alert')
 
 //function, 1000 ms
