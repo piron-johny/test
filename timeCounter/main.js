@@ -26,7 +26,7 @@ const countDown = setInterval(() => {
   ).innerHTML = `${days} : ${hours} : ${minutes} : ${seconds}`;
   
     // Вообщение при окончании времени
-    const finishData = 'Happy NEW 2022 YEAR!'
+    const finishData = "Happy NEW 2022 YEAR!";
 
   if (difference < 0) {
     clearInterval(countDown);
