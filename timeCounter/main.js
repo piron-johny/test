@@ -1,6 +1,5 @@
 //finished time
-// const dateFinishCounter = new Date("Jan 01, 2022 00:00:01").getTime();
-const dateFinishCounter = new Date("Nov 19, 2021 15:28:01").getTime();
+const dateFinishCounter = new Date("Jan 01, 2022 00:00:01").getTime();
 const alert = document.querySelector('.alert');
 const title = document.querySelector('h3');
 
