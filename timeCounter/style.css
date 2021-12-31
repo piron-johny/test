@@ -7,7 +7,7 @@ body {
   flex-direction: column;
 }
 .couter {
-  max-width: 600px;
+  max-width: 100%;
 }
 h3 {
   text-align: center;
